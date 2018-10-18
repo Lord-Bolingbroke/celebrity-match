@@ -7,14 +7,39 @@ $(document).ready(function() {
     var age = parseInt($("#age").val());
     var job = $("#job").val();
 
-    // $(".nameFirst").text(nameFirst);
-    // $(".nameLast").text(nameLast);
-    // $(".gender").text(gender);
-    // $(".age").text(age);
-    // $(".job").text(job);
+    if (gender === 'male' && age >= 50 && job === 'White Collar') {
+      $('#dogHide').show();
+    } else {
+      $('#dogHide').hide();
+    }
 
-    // debugger;
-    // $(".result").slideToggle().removeClass("hidden");
+    if (gender === 'male' && age >= 50 && job === 'Blue Collar') {
+      $('#manHide').show();
+    } else {
+      $('#manHide').hide();
+    }
+
+    if (gender === 'male' && age >= 50 && job === 'Job Abandoning') {
+      $('#womanHide').show();
+    } else {
+      $('#womanHide').hide();
+    }
+
+
+
+    //   if (age >= 30) {
+    //     $('#womanHide').show();
+    //   } else {
+    //     $('#womanHide').hide();
+    //   }
+    //  else {
+    //   if (age < 30) {
+    //     $('#dogHide').show();
+    //   } else {
+    //     $('#dogHide').hide();
+    //     }
+    //   }
+    // }
     event.preventDefault();
   });
 });

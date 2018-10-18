@@ -6,12 +6,18 @@ body {
   display: none;
 }
 
+img {
+  width: 200px;
+}
+
 #manHide {
   display: none;
-  width: 200px;
 }
 
 #womanHide {
   display: none;
-  width: 200px
+}
+
+#dogHide {
+  display: none;
 }
