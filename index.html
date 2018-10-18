@@ -19,14 +19,78 @@
 
         <div class="col-md-6">
           <h2>Answer these Questions:</h2>
-          <form>
 
+          <form id="survey">
+<!-- name -->
+            <div class="panel-body">
+              <div class="form-group">
+                <label for="nameFirst">First Name:</label>
+                <input id="nameFirst" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="nameLast">Last Name:</label>
+                <input id="nameLast" class="form-control" type="text">
+              </div>
+              <div class="panel-body">
+                <div class="form-group">
+                  <label for="age">Age:</label>
+                  <input id="age" class="form-control" type="text">
+                </div>
+
+            </div>
+<!-- gender -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title large">What is your gender?</h2>
+              </div>
+              <div class="panel-body">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="gender" value="male">
+                    Male
+                  </label>
+                  <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                  </label>
+                </div>
+              </div>
+            </div>
+<!-- job type -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title large">What kind of job do you have?</h2>
+              </div>
+              <div class="panel-body">
+                <select class="form-control" id="job">
+                  <option>Blue Collar</option>
+                  <option>White Color</option>
+                  <option>Job Seeking</option>
+                  <option>Job Abandoning</option>
+                </select>
+              </div>
+            </div>
+
+
+
+
+
+
+
+        <button class="btn btn-success" type="submit" name="button">Submit Survey</button>
           </form>
           <div class="col-md-6">
             <h2>This is your match!</h2>
             <div class="well">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
+          </div>
+          <div class="col-md-12">
+            <p>Your name is <span class="nameFirst"></span> <span class="nameLast"></span>.</p>
+            <p>You said your gender is <span class="gender"></span></p>
+            <p>You have a <span class="job"></span></p>
+            <p>You are <span class="age"></span> years old</p>
+
           </div>
         </div>
       </div>
